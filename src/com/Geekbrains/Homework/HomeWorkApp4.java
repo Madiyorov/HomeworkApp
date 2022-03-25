@@ -1,7 +1,6 @@
 package com.Geekbrains.Homework;
 
 import java.util.Arrays;
-import java.util.Map;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -11,12 +10,13 @@ public class HomeWorkApp4 {
     private static final char DOT_X = 'X';
     private static final char DOT_0 = '0';
     private static final char DOT_EMPTY = '•';
-    private static final int DOT_TO_WIN = 4;
+    private static final int DOT_TO_WIN = 5;
     private static final char[][] MAP = new char[SIZE][SIZE];
 
 
     public static void main(String[] args) {
         initMap();
+        printMap();
 
         while (true) {
             humanTurn();
@@ -131,17 +131,48 @@ public class HomeWorkApp4 {
     }
 
     private static void computerTurn() {
+        int[] cell = getNextCellToWin(DOT_0);
+        if (cell == null) {
+            cell = getNextCellToWin(DOT_X);
+            if (cell == null) {
+                cell = getRandomEmptyCell();
+            }
+        }
+        int x = cell[0];
+        int y = cell[1];
+
+        MAP[x][y] = DOT_0;
+    }
+
+    private static int[] getRandomEmptyCell() {
         int x;
         int y;
         Random random = new Random();
 
         do {
-            x = random.nextInt(SIZE);
+            x = random.nextInt(SIZE); // SIZE не включительно
             y = random.nextInt(SIZE);
-            System.out.println("Компютер подобрал кординаты " + x + " " + y);
         } while (MAP[x][y] != DOT_EMPTY);
 
-        MAP[x][y] = DOT_0;
+        return new int[]{x, y};
+    }
+
+    private static int[] getNextCellToWin(char symbol) {
+        for (int x = 0; x < SIZE; x++) {
+            for (int y = 0; y < SIZE; y++) {
+                if (MAP[x][y] == DOT_EMPTY && isGameMoveWinning(x, y, symbol)) {
+                    return new int[]{x, y};
+                }
+            }
+        }
+        return null;
+    }
+
+    private static boolean isGameMoveWinning(int x, int y, char symbol) {
+        MAP[x][y] = symbol;
+        boolean result = isWin(symbol);
+        MAP[x][y] = DOT_EMPTY;
+        return result;
     }
 
     private static void initMap() {
