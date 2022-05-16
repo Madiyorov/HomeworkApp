@@ -1,4 +1,4 @@
-package com.Geekbrains.Homework.HomeWork8;
+package com.Geekbrains.Homework.homeWork8;
 
 import javax.swing.*;
 import java.awt.*;
