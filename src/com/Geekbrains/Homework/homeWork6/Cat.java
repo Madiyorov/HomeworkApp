@@ -1,4 +1,4 @@
-package com.Geekbrains.Homework.HomeWorkApp6;
+package com.Geekbrains.Homework.homeWork6;
 
 class Cat extends Animal {
     Cat(int runLimit, float jumpLimit, int swimLimit) {

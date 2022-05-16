@@ -1,4 +1,4 @@
-package com.Geekbrains.Homework.HomeWorkApp6;
+package com.Geekbrains.Homework.homeWork6;
 
 abstract public class Animal {
     private final int runLimit;
