@@ -1,4 +1,4 @@
-package com.Geekbrains.Homework;
+package com.Geekbrains.Homework.homeWork3;
 
 import java.util.Arrays;
 
