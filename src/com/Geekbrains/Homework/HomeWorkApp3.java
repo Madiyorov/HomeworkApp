@@ -11,7 +11,7 @@ public class HomeWorkApp3 {
 //        Задания №2
         int[] arr = new int[100];
         System.out.println("before:" + Arrays.toString(arr));
-        printApp2(arr, 1, 1);
+        printApp2(arr,1);
         System.out.println("after: " + Arrays.toString(arr));
 //        Задания №3
         int[] arrayNum = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
@@ -35,15 +35,15 @@ public class HomeWorkApp3 {
     public static int[] printApp1(int[] array) {
         System.out.println("Задания №1");
         for (int i = 0; i < array.length; i++) {
-            array[i] = (array[i] == 0) ? 1 : 0;
+            array[i] = array[i] == 0 ? 1 : 0;
         }
         return array;
     }
 
-    public static void printApp2(int[] array, int step, int shift) {
+    public static void printApp2(int[] array, int shift) {
         System.out.println("Задания №2");
         for (int i = 0; i < 100; i++) {
-            array[i] = shift + i * step;
+            array[i] = shift + i;
         }
     }
 
@@ -145,7 +145,6 @@ public class HomeWorkApp3 {
                 arr[arr.length - 1] = tmp;
             }
         }
-
         System.out.print("\nAFTER:  ");
         for (int i : arr) {
             System.out.print(i + " ");
