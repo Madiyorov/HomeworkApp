@@ -1,4 +1,4 @@
-package com.Geekbrains.Homework;
+package com.Geekbrains.Homework.homeWork4;
 
 import java.util.Arrays;
 import java.util.Random;
