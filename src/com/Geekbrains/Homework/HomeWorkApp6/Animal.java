@@ -1,25 +1,25 @@
 package com.Geekbrains.Homework.HomeWorkApp6;
 
 abstract public class Animal {
-    private final int run_limit;
-    private final float jump_limit;
-    private final int swim_limit;
+    private final int runLimit;
+    private final float jumpLimit;
+    private final int swimLimit;
 
-    Animal(int run_limit, float jump_limit, int swim_limit) {
-        this.run_limit = run_limit;
-        this.jump_limit = jump_limit;
-        this.swim_limit = swim_limit;
+    Animal(int runLimit, float jumpLimit, int swimLimit) {
+        this.runLimit = runLimit;
+        this.jumpLimit = jumpLimit;
+        this.swimLimit = swimLimit;
     }
 
     protected boolean run() {
-        return 200 <= run_limit;
+        return 200 <= runLimit;
     }
 
     protected boolean jump() {
-        return (float) 1.5 <= jump_limit;
+        return (float) 1.5 <= jumpLimit;
     }
 
     protected boolean swim() {
-        return 5 <= swim_limit;
+        return 5 <= swimLimit;
     }
 }
