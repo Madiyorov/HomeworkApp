@@ -7,6 +7,7 @@ public class HomeWorkApp1 {
         printColor();
         compareNumbers();
     }
+
     public static void printThreeWords() {
         System.out.println("Orange");
         System.out.println("Banana");
@@ -19,8 +20,7 @@ public class HomeWorkApp1 {
 
         if (a >= 0 && b >= 0) {
             System.out.println("Сумма положительная");
-        }
-        else {
+        } else {
             System.out.println("Сумма отрицательная");
         }
     }
@@ -28,7 +28,7 @@ public class HomeWorkApp1 {
     public static void printColor() {
         int value = 19;
 
-        if (value == 0 ) {
+        if (value == 0) {
             System.out.println("Красный");
         }
         if (value > 0 && value < 100) {
@@ -43,9 +43,9 @@ public class HomeWorkApp1 {
         int a = 15;
         int b = 19;
 
-        if (a >= b){
+        if (a >= b) {
             System.out.println("a >= b");
-        }else {
+        } else {
             System.out.println("a < b");
         }
     }
