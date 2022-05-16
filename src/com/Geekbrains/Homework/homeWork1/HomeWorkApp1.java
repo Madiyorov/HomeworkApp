@@ -1,6 +1,6 @@
-package com.Geekbrains.Homework;
+package com.Geekbrains.Homework.homeWork1;
 
-public class HomeWorkApp {
+public class HomeWorkApp1 {
     public static void main(String[] args) {
         printThreeWords();
         checkSumSign();
