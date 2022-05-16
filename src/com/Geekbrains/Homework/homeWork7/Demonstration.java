@@ -1,4 +1,4 @@
-package com.Geekbrains.Homework.HomeWorkApp7;
+package com.Geekbrains.Homework.homeWork7;
 
 public class Demonstration {
     public static void main(String[] args) {

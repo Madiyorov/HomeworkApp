@@ -1,4 +1,4 @@
-package com.Geekbrains.Homework.HomeWorkApp7;
+package com.Geekbrains.Homework.homeWork7;
 
 public class Cat {
     private String name;
