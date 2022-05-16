@@ -3,7 +3,7 @@ package com.Geekbrains.Homework.homeWork2;
 public class HomeWorkApp2 {
     public static void main(String[] args) {
         System.out.println(printWith(10, 20));
-        printPositiveOrNegative(-1);
+        printPositiveOrNegative(-5);
         System.out.println(printNegative(-5));
         printWord(5);
         printYear(2022);
