@@ -1,9 +1,9 @@
 package com.Geekbrains.Homework.homeWork6;
 
 abstract public class Animal {
-    private final int runLimit;
-    private final float jumpLimit;
-    private final int swimLimit;
+    public final int runLimit;
+    public final float jumpLimit;
+    public final int swimLimit;
 
     Animal(int runLimit, float jumpLimit, int swimLimit) {
         this.runLimit = runLimit;
