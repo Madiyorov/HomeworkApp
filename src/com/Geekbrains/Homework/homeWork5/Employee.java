@@ -1,4 +1,4 @@
-package com.Geekbrains.Homework.HomeWorkApp5;
+package com.Geekbrains.Homework.homeWork5;
 
 public class Employee {
     private String name;
